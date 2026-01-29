@@ -1,8 +1,38 @@
 import React from 'react';
-import { Target, Eye, Landmark, Waves, Sprout, Flame } from 'lucide-react';
+import { Target, Eye, Landmark, Waves, Sprout, Flame, Users } from 'lucide-react';
 import Flier from "../assets/images/flier-3.jpg";
 
 const About = () => {
+    const teamMembers = [
+        // -- Management & Production --
+        { name: "John Courage Oparah", role: "Executive Producer" },
+        { name: "Amb. Blessing Fubara", role: "Show Runner" },
+        { name: "Sir Victor Onwubiko", role: "Line Producer" },
+        { name: "Celestine Okechukwu", role: "Production Manager" },
+
+        // -- Culinary & Kitchen --
+        { name: "Chef Henry Ibrahim", role: "Culinary Operations" },
+        { name: "Chef Cheff Gracemfon David Dan", role: "Culinary Director" },
+        { name: "Chef Samuel Emmanuel Jackson", role: "Food Producer (Challenges & Pantry)" },
+        { name: "Vikpee Sylvia Iedonubari", role: "Kitchen Manager" },
+        { name: "Mr Monday Friday", role: "Food Safety & Hygiene Officer (F&B)" },
+        { name: "Star Wari Bobmanuel", role: "Ingredient / Pantry Coordinator" },
+        
+        // -- Core Team --
+        { name: "Edward Menegbo", role: null },
+        { name: "Engr. Mike Amene", role: null },
+        { name: "Mrs Precious Okwumuo", role: null },
+        { name: "John O. Agbaeze", role: null },
+        { name: "Mr Francis Chibuike", role: null },
+        { name: "Mark-Vic Ozoemene", role: null },
+        { name: "Gift Oruene", role: null },
+        { name: "Prosper Asuodini", role: null },
+        { name: "Emmanuel Ihejirika", role: null },
+        { name: "Regina Odiba", role: null },
+        { name: "Usoro Imaobong Paul", role: null },
+
+
+];
     return (
         <div className="bg-background">
             {/* Full Write-up Section */}
@@ -51,6 +81,44 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
+             <section className="py-20 bg-white border-y border-gray-100">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex items-center space-x-4 mb-12">
+                        <div className="bg-primary/10 p-3 rounded-xl text-primary">
+                            <Users size={32} />
+                        </div>
+                        <div>
+                            <h2 className="text-3xl font-bold text-secondary">The Production Team</h2>
+                            <p className="text-muted text-sm">The minds and hands behind the magic.</p>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {teamMembers.map((member, index) => (
+                            <div 
+                                key={index} 
+                                className="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+                            >
+                                {/* Gold Accent Bar on Left */}
+                                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary group-hover:w-2 transition-all"></div>
+                                
+                                <div className="pl-4">
+                                    <h3 className="text-lg font-bold text-secondary tracking-tight">
+                                        {member.name}
+                                    </h3>
+                                    {member.role && (
+                                        <p className="text-xs font-bold text-primary uppercase tracking-widest mt-2 border-t border-gray-100 pt-2 inline-block">
+                                            {member.role}
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
             {/* Origins of Niger Delta Cuisine - Expanded */}
             <section className="py-20 max-w-7xl mx-auto px-4">

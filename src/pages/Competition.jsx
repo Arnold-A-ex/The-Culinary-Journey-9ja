@@ -36,7 +36,7 @@ const Competition = () => {
                         <span className="absolute -right-4 -top-4 text-8xl font-black text-gray-50">3</span>
                         <h3 className="text-2xl font-bold text-secondary mb-4 relative z-10">The Grand Finale</h3>
                         <p className="text-muted relative z-10">
-                            The final showdown where the best of the best compete for the ultimate title, the grand prize of ₦1,000,000 and a brand new car.
+                        The grand finale brings the ultimate showdown where the best of the best compete for the title and top prizes: ₦1,000,000, a branded car and a recipe contract, with ₦750,000 and ₦500,000 for second and third place, plus consolation prizes for 50 contestants.
                         </p>
                     </div>
                 </div>

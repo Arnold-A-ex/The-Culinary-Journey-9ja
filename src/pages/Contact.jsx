@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, Mail, MapPin, Phone, Facebook, Instagram, Twitter } from 'lucide-react';
+import { MessageSquare, Mail, MapPin, Phone, Facebook, Instagram, Globe, Youtube } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -61,7 +61,8 @@ const Contact = () => {
                             <div className="flex space-x-4">
                                 <a href="https://www.facebook.com/share/17Tf4bxoTf/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-secondary text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-secondary transition shadow-lg"><Facebook /></a>
                                 <a href="https://www.instagram.com/theculinaryjourney9ja?igsh=dHp3cjBkN2Y1D2l4" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-secondary text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-secondary transition shadow-lg"><Instagram /></a>
-                                {/* <a href="#" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-secondary text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-secondary transition shadow-lg"><Twitter /></a> */}
+				{/* <a href="https://www.facebook.com/share/17Tf4bxoTf/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-secondary text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-secondary transition shadow-lg"><Youtube /></a> */}
+                                <a href="https://www.theculinaryjourney9ja.org.ng" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-secondary text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-secondary transition shadow-lg"><Globe /></a>
                             </div>
                         </div>
                     </div>

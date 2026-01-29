@@ -1,7 +1,7 @@
 import Logo from "../assets/images/logo.svg";
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone, Globe, Youtube } from 'lucide-react';
 import Educraft from "../assets/images/logo.png";
 import Consiglories from "../assets/images/d-consiglories.jpg";
 
@@ -24,7 +24,8 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             <a href="https://www.facebook.com/share/17Tf4bxoTf/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition"><Facebook className="w-5 h-5" /></a>
                             <a href="https://www.instagram.com/theculinaryjourney9ja?igsh=dHp3cjBkN2Y1D2l4" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition"><Instagram className="w-5 h-5" /></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition"><Twitter className="w-5 h-5" /></a>
+			    {/* <a href="https://www.theculinaryjourney9ja.org.ng"  target="_blank" rel="noopener noreferrer" className="hover:text-primary transition"><Youtube className="w-5 h-5" /></a>                  */}
+			    <a href="https://www.theculinaryjourney9ja.org.ng"  target="_blank" rel="noopener noreferrer" className="hover:text-primary transition"><Globe className="w-5 h-5" /></a>                 
                         </div>
                     </div>
 
@@ -65,6 +66,11 @@ const Footer = () => {
                                 <Mail className="w-5 h-5 text-primary shrink-0" />
                                 <span>info@theculinaryjourney9ja.org.ng</span>
                             </li>
+			    <li className="flex items-center space-x-3">
+                                <Globe className="w-5 h-5 text-primary shrink-0" />
+                                <span>www.theculinaryjourney9ja.org.ng</span>
+                            </li>
+			    
                         </ul>
                     </div>
                 </div>
