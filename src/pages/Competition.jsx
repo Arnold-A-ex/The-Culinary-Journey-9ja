@@ -1,6 +1,7 @@
 import React from 'react';
 import { Trophy, CheckCircle, ClipboardList, Star, Award, Users } from 'lucide-react';
 import Flier from "../assets/images/flier-1.jpg";
+import PaymentDetails from "../components/PaymentDetails";
 
 
 const Competition = () => {
@@ -82,7 +83,7 @@ const Competition = () => {
                         </ul>
                         <div className="bg-primary/10 p-6 rounded-2xl border border-primary/20 mb-8">
                             <p className="text-secondary font-bold mb-2">Registration Fee: ₦5,000</p>
-                            <p className="text-sm text-muted">Payment details provided upon contact or through our official partner centers.</p>
+                            <p className="text-sm text-muted">Payment details provided below.</p>
                         </div>
 			<a
                             href="https://forms.gle/eb9Ud5GbuJGs1A44A" 
@@ -92,11 +93,15 @@ const Competition = () => {
                             Register
                         </a>
                     </div>
-                    {/* Placeholder for Flier 2 */}
+                    
                     <div className="rounded-3xl overflow-hidden shadow-xl">
                         <img src={ Flier } alt="Prizes Flier" className="w-full h-auto" />
                     </div>
                 </div>
+                { /* Partners Center */}
+                <section className="mt-10">
+                    <PaymentDetails />
+                </section>
             </div>
         </div>
     );
