@@ -73,7 +73,7 @@ const PaymentDetails = () => {
                                     <div className="flex items-center gap-2 text-gray-600 dark:text-zinc-400">
                                         <User className="w-4 h-4" />
                                         <span className="text-sm font-semibold italic">
-                                            The Culinary Journey 9ja
+                                            THE CULINARY JOURNEY 9JA VENTURES
                                         </span>
                                     </div>
                                 </div>
