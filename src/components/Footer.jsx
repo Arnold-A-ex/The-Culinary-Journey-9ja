@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { Facebook, Instagram, Mail, MapPin, Phone, Globe, Youtube } from 'lucide-react';
 import Educraft from "../assets/images/logo.png";
 import Consiglories from "../assets/images/d-consiglories.jpg";
+import Obedient from "../assets/images/obedient-movement.jpg";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -89,6 +90,11 @@ const Footer = () => {
                         {/* D Consiglories */}
                         <div className="flex items-center gap-2">
                             <img src={ Consiglories } alt="D Consiglories logo" className="h-13 w-auto object-contain"/>
+                        </div>
+			<span className="text-primary">|</span>
+                        {/* Obedient Movement */}
+                        <div className="flex items-center gap-2">
+                            <img src={ Obedient } alt="Obedient Movement logo" className="h-13 w-auto object-contain"/>
                         </div>
                     </div>
                 </div>

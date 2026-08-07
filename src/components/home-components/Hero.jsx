@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Star } from 'lucide-react';
 import Educraft from "../../assets/images/logo.png";
 import Consiglories from "../../assets/images/d-consiglories.jpg";
+import Obedient from "../../assets/images/obedient-movement.jpg";
+
 
 const Hero = () => {
     return (
@@ -58,6 +60,10 @@ const Hero = () => {
                         {/* D Consiglories */}
                         <div className="flex items-center gap-2">
                             <img src={ Consiglories } alt="D Consiglories logo" className="h-13 w-auto object-contain"/>
+                        </div>
+			{/* Obedient Movement */}
+                        <div className="flex items-center gap-2">
+                            <img src={ Obedient } alt="Obedient Movement logo" className="h-13 w-auto object-contain"/>
                         </div>
                     </div>
                 </div>
